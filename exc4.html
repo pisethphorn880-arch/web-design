@@ -7,10 +7,11 @@
     <style>
         form{
             width: 780px;
-            height: 570px;
+            height: 580px;
             background-color:rgba(105, 105, 105, 0.155) ;
             margin: 0 auto;
             text-align: center;
+            padding-bottom: 20px;
         }
         .container{
             width: 80%;
@@ -46,6 +47,17 @@
             width: 200px;
             height: 20px;
         }
+        button{
+            width: 100px;
+            height: 30px;
+            border: 0; border-radius: 8px;
+            background-color: rgba(0, 81, 255, 0.817);
+            color: white;
+        }
+        button:hover{
+            background-color: rgba(0, 183, 255, 0.763);
+            color: rgb(67, 63, 63);
+        }
     </style>
 </head>
 <body>
@@ -64,10 +76,10 @@
                 <label style="margin-top: 45%;"><p>Any Comments?</p></label>
             </div>
             <div class="box">
-                <input type="text" placeholder="Enter your full name">
-                <input type="email" placeholder="Enter your Email">
-                <input type="number" placeholder="Enter your Age">
-                <select style="height: 28px; width: 40%; margin-top: 2px;">
+                <input type="text" placeholder="Enter your full name" required>
+                <input type="email" placeholder="Enter your Email" required>
+                <input type="number" placeholder="Enter your Age" required>
+                <select style="height: 28px; width: 40%; margin-top: 2px;" required>
                     <option value="" selected hidden>Select an option</option>
                     <option value="">Student</option>
                     <option value="">Employee</option>
@@ -83,7 +95,7 @@
                         <input type="radio" name="select">
                     </div>
                 </div>
-                <select style="height: 28px; width: 40%;">
+                <select style="height: 28px; width: 40%;" required>
                     <option value="" selected hidden>Select an option</option>
                     <option value="">Web Developer</option>
                     <option value="">Mobile App Developer</option>
@@ -122,6 +134,7 @@
                 </div>
             </div>
         </div>
+        <button type="submit">Submit</button>
     </form>
 </body>
 </html>
