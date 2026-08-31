@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 4</title>
+    <style>
+        form{
+            width: 780px;
+            height: 580px;
+            background-color:rgba(105, 105, 105, 0.155) ;
+            margin: 0 auto;
+            text-align: center;
+            padding-bottom: 20px;
+        }
+        .container{
+            width: 80%;
+            height: 88%;
+            margin: auto;
+            display: flex;
+            gap: 15px;
+        }
+        .tag{
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            width: 50%;
+            height: auto;
+            text-align: right;
+        }
+        .box{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 50%;
+            height: auto;
+        }
+        label{
+            margin-top: 1px;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+        }
+        input{
+            display: flex;
+            justify-content: flex-start;
+            width: 200px;
+            height: 20px;
+        }
+        button{
+            width: 100px;
+            height: 30px;
+            border: 0; border-radius: 8px;
+            background-color: rgba(0, 81, 255, 0.817);
+            color: white;
+        }
+        button:hover{
+            background-color: rgba(0, 183, 255, 0.763);
+            color: rgb(67, 63, 63);
+        }
+    </style>
+</head>
+<body>
+    <h1 style="font-weight: bold; text-align: center;">APPLICATION FORM</h1>
+    <form>
+        <p style="margin-left: 5px; margin-right: 5px; color: gray;">Thank you for your interest in working with us. Please check below for available job opportunities that meet your criteria and send your application by filling out the job Application Form.</p>
+        <div class="container">
+            <div class="tag">
+                <label><span style="margin-top: -3px; color: red; padding-right: 2px;">*</span> Full Name: </label>
+                <label><span style="margin-top: -3px; color: red; padding-right: 2px;">*</span> Email: </label>
+                <label><span style="margin-top: -3px; color: red;">*</span> Age: </label>
+                <label>Which option best describes your current role?</label>
+                <label><p>Would you like to list references?</p></label>
+                <label><p>Which position would you like to apply for?</p></label>
+                <label><p>Which programming lanuguages do you know?</p></label>
+                <label style="margin-top: 45%;"><p>Any Comments?</p></label>
+            </div>
+            <div class="box">
+                <input type="text" placeholder="Enter your full name" required>
+                <input type="email" placeholder="Enter your Email" required>
+                <input type="number" placeholder="Enter your Age" required>
+                <select style="height: 28px; width: 40%; margin-top: 2px;" required>
+                    <option value="" selected hidden>Select an option</option>
+                    <option value="">Student</option>
+                    <option value="">Employee</option>
+                    <option value="">Freelancer</option>
+                </select>
+                <div style="width: 80px; height: 50px; margin-top: 2px;">
+                    <div style="display: flex; width: 60%;">
+                        <label for="" style="margin-top: 3px;">Yes</label>
+                        <input type="radio" name="select">
+                    </div>
+                    <div style="display: flex; width: 55%;">
+                        <label for="" style="margin-top: 3px;">No</label>
+                        <input type="radio" name="select">
+                    </div>
+                </div>
+                <select style="height: 28px; width: 40%;" required>
+                    <option value="" selected hidden>Select an option</option>
+                    <option value="">Web Developer</option>
+                    <option value="">Mobile App Developer</option>
+                    <option value="">DevOP</option>
+                </select>
+                <div style="width: 80px; height: 50px; margin-top: 18px;">
+                    <div style="display: flex; width: 60%;">
+                        <input type="checkbox" name="select">
+                        <label for="" style="margin-top: 3px;">Java</label>
+                    </div>
+                    <div style="display: flex; width: 55%;">
+                        <input type="checkbox"select">
+                        <label for="" style="margin-top: 3px;">Python</label>
+                    </div>
+                    <div style="display: flex; width: 55%;">
+                        <input type="checkbox"select">
+                        <label for="" style="margin-top: 3px;">Javascript</label>
+                    </div>
+                    <div style="display: flex; width: 55%;">
+                        <input type="checkbox"select">
+                        <label for="" style="margin-top: 3px;">C++</label>
+                    </div>
+                    <div style="display: flex; width: 55%;">
+                        <input type="checkbox"select">
+                        <label for="" style="margin-top: 3px;">Swift</label>
+                    </div>
+                    <div style="display: flex; width: 55%;">
+                        <input type="checkbox"select">
+                        <label for="" style="margin-top: 3px;">Ruby</label>
+                    </div>
+                    <div style="display: flex; width: 55%;">
+                        <input type="checkbox"select">
+                        <label for="" style="margin-top: 3px;">.NET</label>
+                    </div>
+                    <textarea style="margin-top: 14px; width: 200px; height: 35px;" placeholder="Enter your comment here..."></textarea>
+                </div>
+            </div>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
