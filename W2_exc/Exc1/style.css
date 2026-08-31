@@ -1,0 +1,16 @@
+h1{
+    font-weight: bold;
+}
+button{
+    width: 100px;
+    height: 30px;
+    border: 1px solid rgb(92, 88, 88);
+    border-radius: 8px;
+    background-color: rgb(92, 125, 234);
+    color: white;
+}
+button:hover{
+    border: 1px solid rgb(192, 232, 155);
+    background-color: rgba(11, 94, 247, 0.692);
+    color: rgb(40, 58, 78);
+}
